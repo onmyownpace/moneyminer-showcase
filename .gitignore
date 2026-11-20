@@ -1,0 +1,13 @@
+.DS_Store
+*.db
+*.sqlite
+.env
+.env.*
+*.pem
+*.key
+credentials*
+__pycache__/
+.venv/
+node_modules/
+.idea/
+.vscode/

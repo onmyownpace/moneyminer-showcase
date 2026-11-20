@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+  <title id="t">Logical roles versus running AI models</title>
+  <desc id="d">Side-by-side comparison: 17 logical MoneyMiner roles inside one local process versus separately running Cursor/cloud AI agents. Conceptual diagram, not a screenshot.</desc>
+  <rect width="1200" height="520" fill="#0b1418"/>
+  <text x="40" y="48" font-family="Georgia, serif" font-size="28" fill="#e8f2ee">Roles vs models</text>
+  <text x="40" y="78" font-family="Segoe UI,sans-serif" font-size="14" fill="#8aada0">Conceptual comparison — avoids the common mistake of counting each role as a separate AI.</text>
+
+  <rect x="40" y="110" width="540" height="340" rx="14" fill="#12282a" stroke="#3ddc97" stroke-width="1.5"/>
+  <text x="64" y="150" font-family="Segoe UI,sans-serif" font-size="20" fill="#3ddc97">Inside MoneyMiner (local)</text>
+  <text x="64" y="186" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8ddd4">• ~17 logical roles in one process</text>
+  <text x="64" y="216" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8ddd4">• Shared SQLite state &amp; activity log</text>
+  <text x="64" y="246" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8ddd4">• Real concurrency via ThreadPool workers</text>
+  <text x="64" y="276" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8ddd4">• Mission Control Start/Pause/Stop loop</text>
+  <text x="64" y="306" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8ddd4">• Estimates never shown as earnings</text>
+  <text x="64" y="336" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8ddd4">• External actions wait for human GO</text>
+  <text x="64" y="390" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#6a9a88">count roles ≠ count model instances</text>
+
+  <rect x="620" y="110" width="540" height="340" rx="14" fill="#141e2e" stroke="#5b9dff" stroke-width="1.5"/>
+  <text x="644" y="150" font-family="Segoe UI,sans-serif" font-size="20" fill="#5b9dff">Outside (separate AIs)</text>
+  <text x="644" y="186" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8d4e8">• Cursor Cloud Agents building the product</text>
+  <text x="644" y="216" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8d4e8">• Operator chat / planning sessions</text>
+  <text x="644" y="246" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8d4e8">• Optional future cloud army (budgeted)</text>
+  <text x="644" y="276" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8d4e8">• Each is an independent run/session</text>
+  <text x="644" y="306" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8d4e8">• Not the same as Mission Control roles</text>
+  <text x="644" y="336" font-family="Segoe UI,sans-serif" font-size="15" fill="#c8d4e8">• Shown separately in the dashboard</text>
+  <text x="644" y="390" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#6a8aaa">do not conflate with army roles</text>
+
+  <text x="40" y="490" font-family="Segoe UI,sans-serif" font-size="12" fill="#5a7a70">LABEL: Conceptual diagram — not a live product screenshot</text>
+</svg>

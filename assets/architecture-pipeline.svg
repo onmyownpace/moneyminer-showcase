@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780" role="img" aria-labelledby="t d">
+  <title id="t">MoneyMiner pipeline: discovery through tracking</title>
+  <desc id="d">Conceptual architecture diagram showing discovery to tracking. Distinguishes 17 logical agent roles from independently running AI models. Clearly labeled conceptual — not a live Mission Control screenshot.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1418"/><stop offset="100%" stop-color="#122028"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#3ddc97"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="780" fill="url(#bg2)"/>
+  <text x="40" y="48" font-family="Georgia, serif" font-size="30" fill="#e8f2ee">Architecture: discovery → tracking</text>
+  <text x="40" y="78" font-family="Segoe UI, Helvetica, sans-serif" font-size="15" fill="#8aada0">Conceptual diagram (not a live screenshot). Pipeline gates keep spending and submissions human-approved.</text>
+
+<rect x="40" y="120" width="190" height="130" rx="12" fill="#14352e" stroke="#3ddc97" stroke-width="1.5"/>
+<text x="54" y="152" font-family="Segoe UI,sans-serif" font-size="16" font-weight="600" fill="#3ddc97">1  Discovery</text>
+<text x="54" y="180" font-family="Segoe UI,sans-serif" font-size="13" fill="#c8ddd4">Find funded SE work</text>
+<text x="54" y="216" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#8aada0">Hunter · Scout · Niche Scout</text>
+<rect x="260" y="120" width="210" height="130" rx="12" fill="#14303a" stroke="#5b9dff" stroke-width="1.5"/>
+<text x="274" y="152" font-family="Segoe UI,sans-serif" font-size="16" font-weight="600" fill="#5b9dff">2  Validate</text>
+<text x="274" y="180" font-family="Segoe UI,sans-serif" font-size="13" fill="#c8ddd4">Funding · competition · payout</text>
+<text x="274" y="216" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#8aada0">Verifier · Comp Analyst · Terms</text>
+<rect x="500" y="120" width="190" height="130" rx="12" fill="#2a2a14" stroke="#e0c35a" stroke-width="1.5"/>
+<text x="514" y="152" font-family="Segoe UI,sans-serif" font-size="16" font-weight="600" fill="#e0c35a">3  Prioritize</text>
+<text x="514" y="180" font-family="Segoe UI,sans-serif" font-size="13" fill="#c8ddd4">Score & first-dollar rank</text>
+<text x="514" y="216" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#8aada0">Evaluator · Ranker · Prioritizer</text>
+<rect x="720" y="120" width="190" height="130" rx="12" fill="#3a2414" stroke="#e08a5a" stroke-width="1.5"/>
+<text x="734" y="152" font-family="Segoe UI,sans-serif" font-size="16" font-weight="600" fill="#e08a5a">4  Human GO</text>
+<text x="734" y="180" font-family="Segoe UI,sans-serif" font-size="13" fill="#c8ddd4">Operator approval gate</text>
+<text x="734" y="216" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#8aada0">No auto-spend / submit</text>
+<rect x="940" y="120" width="190" height="130" rx="12" fill="#142438" stroke="#7aa7ff" stroke-width="1.5"/>
+<text x="954" y="152" font-family="Segoe UI,sans-serif" font-size="16" font-weight="600" fill="#7aa7ff">5  Execution prep</text>
+<text x="954" y="180" font-family="Segoe UI,sans-serif" font-size="13" fill="#c8ddd4">Local fix + tests + EOI draft</text>
+<text x="954" y="216" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#8aada0">Coding Prep · Proposal Agent</text>
+<rect x="1160" y="120" width="200" height="130" rx="12" fill="#2a1438" stroke="#c79bff" stroke-width="1.5"/>
+<text x="1174" y="152" font-family="Segoe UI,sans-serif" font-size="16" font-weight="600" fill="#c79bff">6  Tracking</text>
+<text x="1174" y="180" font-family="Segoe UI,sans-serif" font-size="13" fill="#c8ddd4">Claims · invoices · receipts</text>
+<text x="1174" y="216" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#8aada0">Payment Tracker · Reply Monitor</text>
+<line x1="234" y1="185" x2="256" y2="185" stroke="#3ddc97" stroke-width="2" marker-end="url(#arrow)" opacity="0.85"/>
+<line x1="474" y1="185" x2="496" y2="185" stroke="#3ddc97" stroke-width="2" marker-end="url(#arrow)" opacity="0.85"/>
+<line x1="694" y1="185" x2="716" y2="185" stroke="#3ddc97" stroke-width="2" marker-end="url(#arrow)" opacity="0.85"/>
+<line x1="914" y1="185" x2="936" y2="185" stroke="#3ddc97" stroke-width="2" marker-end="url(#arrow)" opacity="0.85"/>
+<line x1="1134" y1="185" x2="1156" y2="185" stroke="#3ddc97" stroke-width="2" marker-end="url(#arrow)" opacity="0.85"/>
+
+  <rect x="40" y="290" width="1320" height="120" rx="12" fill="#0e1c22" stroke="#2a4a44" stroke-width="1"/>
+  <text x="60" y="328" font-family="Georgia, serif" font-size="20" fill="#e8f2ee">Logical roles ≠ independently running AI models</text>
+  <text x="60" y="360" font-family="Segoe UI,sans-serif" font-size="14" fill="#a8c4ba">MoneyMiner defines ~17 logical agent roles (Orchestrator, hunters, verifiers, proposal &amp; payment specialists, etc.).</text>
+  <text x="60" y="386" font-family="Segoe UI,sans-serif" font-size="14" fill="#a8c4ba">They log activity inside one local Mission Control process and share ThreadPool workers — they are not 17 separate cloud AIs.</text>
+
+<text x="40" y="460" font-family="Georgia, serif" font-size="20" fill="#e8f2ee">17 logical roles</text>
+<rect x="40" y="490" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="52" y="508" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">CONTROL</text>
+<text x="52" y="524" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Orchestrator</text>
+<rect x="380" y="490" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="392" y="508" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">DISCOVER</text>
+<text x="392" y="524" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Paid Opportunity Hunter</text>
+<rect x="720" y="490" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="732" y="508" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">DISCOVER</text>
+<text x="732" y="524" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Internet Scout</text>
+<rect x="1060" y="490" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="1072" y="508" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">DISCOVER</text>
+<text x="1072" y="524" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Niche Bounty Scout</text>
+<rect x="40" y="542" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="52" y="560" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">INVESTIGATE</text>
+<text x="52" y="576" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">AgentPay Probe</text>
+<rect x="380" y="542" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="392" y="560" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">INVESTIGATE</text>
+<text x="392" y="576" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Deep Investigator</text>
+<rect x="720" y="542" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="732" y="560" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">INVESTIGATE</text>
+<text x="732" y="576" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Competition Analyst</text>
+<rect x="1060" y="542" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="1072" y="560" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">VERIFY</text>
+<text x="1072" y="576" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Verifier</text>
+<rect x="40" y="594" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="52" y="612" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">VERIFY</text>
+<text x="52" y="628" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Payout Terms Verifier</text>
+<rect x="380" y="594" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="392" y="612" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">VERIFY</text>
+<text x="392" y="628" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">First-Dollar Prioritizer</text>
+<rect x="720" y="594" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="732" y="612" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">ESTIMATE</text>
+<text x="732" y="628" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Evaluator</text>
+<rect x="1060" y="594" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="1072" y="612" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">RANK</text>
+<text x="1072" y="628" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Execution Reviewer</text>
+<rect x="40" y="646" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="52" y="664" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">LEARN</text>
+<text x="52" y="680" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Researcher</text>
+<rect x="380" y="646" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="392" y="664" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">PREPARE</text>
+<text x="392" y="680" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Coding Prep</text>
+<rect x="720" y="646" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="732" y="664" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">PROPOSE</text>
+<text x="732" y="680" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Proposal Agent</text>
+<rect x="1060" y="646" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="1072" y="664" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">TRACK</text>
+<text x="1072" y="680" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Payment Tracker</text>
+<rect x="40" y="698" width="320" height="44" rx="8" fill="#122028" stroke="#2a4a44"/>
+<text x="52" y="716" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a9a88">TRACK</text>
+<text x="52" y="732" font-family="Segoe UI,sans-serif" font-size="13" fill="#e8f2ee">Sponsor Reply Monitor</text>
+<text x="40" y="760" font-family="Segoe UI,sans-serif" font-size="12" fill="#5a7a70">LABEL: Conceptual architecture SVG — operator should still supply real Mission Control screenshots when available.</text>
+</svg>
